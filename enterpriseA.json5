@@ -1,6 +1,6 @@
 {
 	"app": {
-		"bundleName": "com.wyj.attackdemo",
+		"bundleName": "com.example.wyjunit2thirdhomeworkserver",
 		"bundleType": "app",
 		"vendor": "example",
 		"versionCode": 2000000,
