@@ -1,6 +1,6 @@
 {
 	"app": {
-		"bundleName": "enterprise.manifest\\ncom",
+		"bundleName": "enterprise.manifest.\\n\\\\ncom",
 		"bundleType": "app",
 		"vendor": "example",
 		"versionCode": 1000000,
