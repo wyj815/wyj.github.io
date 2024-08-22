@@ -3,8 +3,8 @@
 		"bundleName": "com.test.online.enterprise.A",
 		"bundleType": "app",
 		"vendor": "example",
-		"versionCode": 1000000,
-		"versionName": "1.0.0",
+		"versionCode": 2000000,
+		"versionName": "2.0.0",
 		"deployDomain": "wyj815.github.io",
 		"icons": {
 			"normal": "https://wyj815.github.io/normal.png",
@@ -23,7 +23,7 @@
 					"2in1",
 					"car"
 				],
-				"packageUrl": "https://wyj815.github.io/wyj.github.io/entry-default-signed.hap",
+				"packageUrl": "https://wyj815.github.io/wyj.github.io/enterprisetest.hap",
 				"packageHash": "7836339b2d72f500d90c1a907b7970e3df432f6d89f1fa9560d121970f3f0412"
 			}
 		]
