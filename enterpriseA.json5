@@ -4,7 +4,7 @@
 		"vendor": "example",
 		"versionCode": 2000000,
 		"versionName": "2.0.0",
-		"deployDomain": "wyjtest@wyj815.github.io",
+		"deployDomain": "wyj815.github.io",
 		"icons": {
 			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
 			"large": "https://wyj815.github.io/wyj.github.io/large.png"
