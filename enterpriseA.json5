@@ -6,8 +6,8 @@
 		"versionName": "2.0.0",
 		"deployDomain": "wyjtest@wyj815.github.io",
 		"icons": {
-			"normal": "https://wyj815.github.io/normal.png",
-			"large": "https://wyj815.github.io/large.png"
+			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
+			"large": "https://wyj815.github.io/wyj.github.io/large.png"
 		},
 		"label": "企业应用A",
 		"minAPIVersion": "5.0.0(12)",
