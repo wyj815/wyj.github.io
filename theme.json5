@@ -2,8 +2,8 @@
 		"bundleName": "com.huawei.hmsapp.thememanager",
 		"bundleType": "app",
 		"vendor": "example",
-		"versionCode": 50000012,
-		"versionName": "5.0.0.25",
+		"versionCode": 10009314,
+		"versionName": "1.0.9.314",
 		"deployDomain": "wyj815.github.io",
 		"icons": {
 			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
