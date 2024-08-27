@@ -1,0 +1,29 @@
+{"app": {
+		"bundleName": "com.huawei.hmsapp.thememanager",
+		"bundleType": "app",
+		"vendor": "example",
+		"versionCode": 50000012,
+		"versionName": "5.0.0.25",
+		"deployDomain": "wyj815.github.io",
+		"icons": {
+			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
+			"large": "https://wyj815.github.io/wyj.github.io/large.png"
+		},
+		"label": "企业应用A",
+		"minAPIVersion": "5.0.0(12)",
+		"targetAPIVersion": "5.0.0(12)",
+		"modules": [
+			{
+				"name": "entry",
+				"type": "entry",
+				"deviceTypes": [
+					"phone",
+					"tablet",
+					"2in1",
+					"car"
+				],
+				"packageUrl": "https://wyj815.github.io/wyj.github.io/thememanager.hap",
+				"packageHash": "39c550267177410bdc3204a804e87664b7a9d0ed1c971eb9a0b857ae7a13fd4c"
+			}
+		]
+	}}
