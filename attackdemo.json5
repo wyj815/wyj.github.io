@@ -1,0 +1,29 @@
+{"app": {
+		"bundleName": "com.wyj.attackdemo",
+		"bundleType": "app",
+		"vendor": "example",
+		"versionCode": 2000000,
+		"versionName": "2.0.0",
+		"deployDomain": "wyj815.github.io",
+		"icons": {
+			"normal": "https://wyj815.github.io/wyj.github.io/yunxiao.png",
+			"large": "https://wyj815.github.io/wyj.github.io/yunxiaolarge.png"
+		},
+		"label": "企业应用attackdemo",
+		"minAPIVersion": "5.0.0(12)",
+		"targetAPIVersion": "5.0.0(12)",
+		"modules": [
+			{
+				"name": "entry",
+				"type": "entry",
+				"deviceTypes": [
+					"phone",
+					"tablet",
+					"2in1",
+					"car"
+				],
+				"packageUrl": "https://wyj815.github.io/wyj.github.io/attackdemo.hap",
+				"packageHash": "b089cd704fcfb4c05479f58f531f238e25040860"
+			}
+		]
+	}}
