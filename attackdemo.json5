@@ -1,6 +1,7 @@
 {"app": {
 		"bundleName": "com.wyj.attackdemo",
 		"bundleType": "app",
+		"appDistributionType":"enterprise",
 		"vendor": "example",
 		"versionCode": 2000000,
 		"versionName": "2.0.0",
@@ -22,7 +23,6 @@
 					"2in1",
 					"car"
 				],
-				"distributeType":"enterprise",
 				"packageUrl": "https://wyj815.github.io/wyj.github.io/attackdemo.hap",
 				"packageHash": "9fcc3667759049d6c5d079aab74e7bcd88f4de198a6c77f7f8a2c8746ba5a476"
 			}
