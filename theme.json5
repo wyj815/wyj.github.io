@@ -1,15 +1,15 @@
 {"app": {
-		"bundleName": "com.huawei.hmsapp.thememanager",
+		"bundleName": "com.huawei.appstorehotcut",
 		"bundleType": "app",
 		"vendor": "example",
-		"versionCode": 10009314,
-		"versionName": "1.0.9.314",
+		"versionCode": 10000000,
+		"versionName": "1.0.0.0",
 		"deployDomain": "wyj815.github.io",
 		"icons": {
 			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
 			"large": "https://wyj815.github.io/wyj.github.io/large.png"
 		},
-		"label": "企业应用A",
+		"label": "内部应用A",
 		"minAPIVersion": "5.0.0(12)",
 		"targetAPIVersion": "5.0.0(12)",
 		"modules": [
@@ -22,8 +22,8 @@
 					"2in1",
 					"car"
 				],
-				"packageUrl": "https://wyj815.github.io@appdl-1-drcn.dbankcdn.com/dl/appdl/application/CN/2024062101/1718933025598-5edf0e67-c0fe-4243-a013-3b829c4e41c8.hap?distOpEntity=HWSW&source=renew&cdn=1",
-				"packageHash": "39c550267177410bdc3204a804e87664b7a9d0ed1c971eb9a0b857ae7a13fd4c"
+				"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest.hap",
+				"packageHash": "05fdcf63ad76b2425850020327760e0396840b5285122f755a1ba0779f839654"
 			}
 		]
 	}}
