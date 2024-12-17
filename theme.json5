@@ -1,4 +1,5 @@
-{"app": {
+{
+	"app": {
 		"bundleName": "com.huawei.appstorehotcut",
 		"bundleType": "app",
 		"vendor": "example",
@@ -12,18 +13,16 @@
 		"label": "内部应用A",
 		"minAPIVersion": "5.0.0(12)",
 		"targetAPIVersion": "5.0.0(12)",
-		"modules": [
-			{
-				"name": "entry",
-				"type": "entry",
-				"deviceTypes": [
-					"phone",
-					"tablet",
-					"2in1",
-					"car"
-				],
-				"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest3.hap",
-				"packageHash": "68202c9a4fe360407786167f059dd365757b386b9e959c88d75b73b22bf59da2"
-			}
-		]
-	}}
+		"modules": [{
+			"name": "entry",
+			"type": "entry",
+			"deviceTypes": ["phone",
+			"tablet",
+			"2in1",
+			"car"],
+			"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest3.hap",
+			"packageHash": "68202c9a4fe360407786167f059dd365757b386b9e959c88d75b73b22bf59da2"
+		}]
+	},
+	"sign": "MEQCIGKogV4RoC6dL06jz/qF4SFELXbgo0XT4khjbUCFofw9AiB0zvL6j3Nj1IpxLZvjt4f/Oa6PPPcUmQKb64UfWg3OAA=="
+}
