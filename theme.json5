@@ -10,7 +10,7 @@
 			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
 			"large": "https://wyj815.github.io/wyj.github.io/large.png"
 		},
-		"label": "内部应用A",
+		"label": "内部测试应用A",
 		"minAPIVersion": "5.0.0(12)",
 		"targetAPIVersion": "5.0.0(12)",
 		"modules": [{
@@ -20,9 +20,9 @@
 			"tablet",
 			"2in1",
 			"car"],
-			"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest3.hap",
-			"packageHash": "68202c9a4fe360407786167f059dd365757b386b9e959c88d75b73b22bf59da2"
+			"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest.hap",
+			"packageHash": "829a571b5c0fb3264153f50189322d71f8d8c4b3303ce1531315eac4f4eaebe5"
 		}]
 	},
-	"sign": "MEQCIEYamzxYfxF2+6B0xB29vCRMGzFIHWEorJbnjoi2SBP4AiBBysNQ4lkFWUI+jpGyA1rDVMoUoWaMQQxK16sE9sxZrQ=="
+	"sign": "MEUCIHA+MumArhYh1IGWhXTC58geda//3qqQcPSWYvG7pxUfAiEA+6Y2rDY5Xhm+laLeWgyvIGl0+gjvcGU79EzxhiyRAvA="
 }
