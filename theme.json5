@@ -1,9 +1,10 @@
-{"app": {
+{
+	"app": {
 		"bundleName": "com.huawei.appstorehotcut",
 		"bundleType": "app",
 		"vendor": "example",
-		"versionCode": 1000000,
-		"versionName": "1.0.0",
+		"versionCode": 10000000,
+		"versionName": "1.0.0.0",
 		"deployDomain": "wyj815.github.io",
 		"icons": {
 			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
@@ -12,20 +13,16 @@
 		"label": "内部应用A",
 		"minAPIVersion": "5.0.0(12)",
 		"targetAPIVersion": "5.0.0(12)",
-		"modules": [
-			{
-				"name": "entry",
-				"type": "entry",
-				"deviceTypes": [
-					"phone",
-					"tablet",
-					"2in1",
-					"car"
-				],
-				"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest3.hap",
-				"packageHash": "68202c9a4fe360407786167f059dd365757b386b9e959c88d75b73b22bf59da2"
-			}
-		]
+		"modules": [{
+			"name": "entry",
+			"type": "entry",
+			"deviceTypes": ["phone",
+			"tablet",
+			"2in1",
+			"car"],
+			"packageUrl": "https://wyj815.github.io/wyj.github.io/appstoreinternaltest3.hap",
+			"packageHash": "68202c9a4fe360407786167f059dd365757b386b9e959c88d75b73b22bf59da2"
+		}]
 	},
-	"sign":"MEUCIDIXOlyUZlkrEaZ6epZoUaQul/Zcsa+tP5HpxH7TGb57AiEA8yrbVq2jln56A+cgKPErqc0EcK6LAf8PSOwFNN0VihE="
+	"sign": "MEUCIDIXOlyUZlkrEaZ6epZoUaQul/Zcsa+tP5HpxH7TGb57AiEA8yrbVq2jln56A+cgKPErqc0EcK6LAf8PSOwFNN0VihE="
 }
