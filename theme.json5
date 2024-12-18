@@ -2,7 +2,7 @@
 		"bundleName": "com.huawei.appstorehotcut",
 		"bundleType": "app",
 		"vendor": "example",
-		"versionCode": 10000000,
+		"versionCode": 1000000,
 		"versionName": "1.0.0.0",
 		"deployDomain": "wyj815.github.io",
 		"icons": {
