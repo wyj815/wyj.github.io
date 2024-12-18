@@ -3,7 +3,7 @@
 		"bundleType": "app",
 		"vendor": "example",
 		"versionCode": 1000000,
-		"versionName": "1.0.0.0",
+		"versionName": "1.0.0",
 		"deployDomain": "wyj815.github.io",
 		"icons": {
 			"normal": "https://wyj815.github.io/wyj.github.io/normal.png",
@@ -27,5 +27,5 @@
 			}
 		]
 	},
-	"sign":"MEUCIQCfJD9uO6AeKRznqUeuowb+Mn6+SiHK79Y2x9iYitNUMwIgLU37BctcBSTocY/v7zKRwJsg33Xf6AyNP6Mg+NhJ76s="
+	"sign":"MEUCIDIXOlyUZlkrEaZ6epZoUaQul/Zcsa+tP5HpxH7TGb57AiEA8yrbVq2jln56A+cgKPErqc0EcK6LAf8PSOwFNN0VihE="
 }
