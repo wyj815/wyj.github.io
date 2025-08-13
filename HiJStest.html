@@ -1,0 +1,307 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="user-scalable=no" />
+		<title>应用市场/游戏中心JS接口测试页面</title>
+		<style type="text/css">
+			.clearfix{
+		        clear: both;
+		    }
+		    
+			.left {
+				float: left;
+				
+			}
+			
+			.right {
+				float: left;
+				
+			}
+		</style>
+		<script type="text/javascript">
+			
+			// 获取回调函数逻辑
+			function callbackName(data1,data2,data3,data4,data5,data6,data7){
+				var CBContent = document.getElementById("funParamID6").value
+				eval(CBContent)
+			}
+	
+			//基础方法——无参数时
+			function myFuncNoParam() {
+				var name = document.getElementById("funNameID").value
+				window.HiSpaceObject[name]()
+			}
+
+			//基础方法——无参数时——带返回值
+			function myFuncNoParamResult() {
+				var name = document.getElementById("funNameID").value
+				var result = window.HiSpaceObject[name]()
+				//if  (!result)  {result = 0}
+				document.getElementById('showResult').innerHTML = result
+			}
+			
+			//基础方法——一个参数的时候
+			function myFunc() {
+				var name = document.getElementById("funNameID").value
+				var param = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var CBContent = document.getElementById("funParamID6").value
+				//eval("window.HiSpaceObject." + name + "(" + param + ")")	
+				if(param == "2") {
+					window.HiSpaceObject[name](2)
+				} 
+				else if(CBContent){
+					window.HiSpaceObject[name](param)
+					//调用回调函数
+					callbackName(data1,data2,data3,data4,data5,data6,data7)
+				}
+				else {
+					window.HiSpaceObject[name](param)
+				}
+			}
+
+			//基础方法——一个参数的时候——带返回值
+			function myFuncResult() {
+				var name = document.getElementById("funNameID").value
+				var param = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				//eval("window.HiSpaceObject." + name + "(" + param + ")")	
+				var result = window.HiSpaceObject[name](param)
+				document.getElementById('showResult').innerHTML = result
+			}
+			
+				
+			//基础方法——两个参数的时候
+			function myFunc2() {
+				var name = document.getElementById("funNameID").value
+				var param1 = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var param2 = document.getElementById("funParamID2").value.replace(/\s+/g, "")
+				var CBContent = document.getElementById("funParamID6").value
+				//判断CBContent值存在,可知该接口参数为回调函数
+				if(CBContent) {
+					window.HiSpaceObject[name](param1, param2)
+					//调用回调函数
+					callbackName(data1,data2,data3,data4,data5,data6,data7)
+				}
+				window.HiSpaceObject[name](param1, param2)
+			}
+			
+			//基础方法——两个参数的时候——带返回值
+			function myFunc2Result() {
+				var name = document.getElementById("funNameID").value
+				var param1 = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var param2 = document.getElementById("funParamID2").value.replace(/\s+/g, "")
+
+				var result;
+
+				if(param2 == "1") {
+					result = window.HiSpaceObject[name](param1, 1)
+				} else if(param2 == "10000") {
+					result = window.HiSpaceObject[name](param1, 10000)
+				} else {
+					result = window.HiSpaceObject[name](param1, param2)
+				}
+
+				document.getElementById('showResult').innerHTML = result
+			}
+			
+			//基础方法——三个参数的时候
+			function myFunc3() {
+				var name = document.getElementById("funNameID").value
+				var param1 = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var param2 = document.getElementById("funParamID2").value.replace(/\s+/g, "")
+				var param3 = document.getElementById("funParamID3").value.replace(/\s+/g, "")
+				var CBContent = document.getElementById("funParamID6").value
+				if(param3 == "1") {
+					window.HiSpaceObject[name](param1, param2, 1)
+				} else if(param3 == "2") {
+					window.HiSpaceObject[name](param1, param2, 2)
+				} else if(param3 == "true") {
+					window.HiSpaceObject[name](param1, param2, true)
+				} else if(param3 == "false") {
+					window.HiSpaceObject[name](param1, param2, false)
+				}else if(CBContent){
+					window.HiSpaceObject[name](param1, param2, param3)
+					//调用回调函数
+					callbackName(data1,data2,data3,data4,data5,data6,data7)
+				} else {
+					window.HiSpaceObject[name](param1, param2, param3)
+				}
+
+			}
+
+			//基础方法——四个参数的时候
+			function myFunc4() {
+				var name = document.getElementById("funNameID").value
+				var param1 = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var param2 = document.getElementById("funParamID2").value.replace(/\s+/g, "")
+				var param3 = document.getElementById("funParamID3").value.replace(/\s+/g, "")
+				var param4 = document.getElementById("funParamID4").value.replace(/\s+/g, "")
+				var CBContent = document.getElementById("funParamID6").value
+				if(CBContent){
+					window.HiSpaceObject[name](param1, param2, param3, param4)
+					//调用回调函数
+					callbackName(data1,data2,data3,data4,data5,data6,data7)
+					
+				}window.HiSpaceObject[name](param1, param2, param3, param4)
+
+			}
+
+			//基础方法——五个参数的时候
+			function myFunc5() {
+				var name = document.getElementById("funNameID").value
+				var param1 = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var param2 = document.getElementById("funParamID2").value.replace(/\s+/g, "")
+				var param3 = document.getElementById("funParamID3").value.replace(/\s+/g, "")
+				var param4 = document.getElementById("funParamID4").value.replace(/\s+/g, "")
+				var param5 = document.getElementById("funParamID5").value.replace(/\s+/g, "")
+				var CBContent = document.getElementById("funParamID6").value
+				if(param3 == "1") {
+					window.HiSpaceObject[name](param1, param2, 1, param4, param5)
+				}else if(CBContent){
+					window.HiSpaceObject[name](param1, param2, param3, param4,param5)
+					//调用回调函数
+					callbackName(data1,data2,data3,data4,data5,data6,data7) 
+				}else {
+					window.HiSpaceObject[name](param1, param2, param3, param4, param5)
+				}
+
+			}
+
+			//基础方法——四个参数的时候——带返回值
+			function myFunc4Result() {
+				var name = document.getElementById("funNameID").value
+				var param1 = document.getElementById("funParamID").value.replace(/\s+/g, "")
+				var param2 = document.getElementById("funParamID2").value.replace(/\s+/g, "")
+				var param3 = document.getElementById("funParamID3").value.replace(/\s+/g, "")
+				var param4 = document.getElementById("funParamID4").value.replace(/\s+/g, "")
+
+				var result = window.HiSpaceObject[name](param1, param2, param3, param4)
+				document.getElementById('showResult').innerHTML = result
+			}
+			
+			
+			//字体变大
+			function fontBig() {
+				document.getElementById('setTextSizeNormal').style.fontSize = 100 + 'px'
+			}
+
+			//字体变小
+			function fontSmall() {
+				document.getElementById('setTextSizeNormal').style.fontSize = 20 + 'px'
+			}
+
+			//获取webview的字号
+			function showResult() {
+				var font = document.getElementById('setTextSizeNormal').style.fontSize
+				document.getElementById('showResult').innerHTML = 'size:' + parseInt(font)
+			}
+			
+		
+			//清除文本框内的所有内容
+			function ClearAllText(){
+				var txts=document.getElementsByTagName("input");  
+				
+				for(var i=0;i<txts.length;i++)  
+				{  
+					console.log(txts[i])
+					if(txts[i].type=="text")
+					{  
+						txts[i].value ="";  
+					}  
+				}
+			}
+
+			
+			
+		</script>
+	</head>
+
+	<body>
+
+		<div class="left">
+			<div id="d1" style="font-size:30px;margin-left:30px">js接口测试</div>
+			
+			<div id="d2" style="font-size:30px;margin-left:30px">js名称</div>
+			
+			<input id="funNameID" type="text" style="font-size:30px;margin-left:30px" name="funName" />
+			
+			<div id="d3" style="font-size:30px;margin-left:30px">js参数</div>
+			
+			<input id="funParamID" type="text" style="font-size:30px;margin-left:30px" name="funParam" />
+			
+			<div id="d4" style="font-size:30px;margin-left:30px">js参数2</div>
+			
+			<input id="funParamID2" type="text" style="font-size:30px;margin-left:30px" name="funParam2" />
+			
+			<div id="d5" style="font-size:30px;margin-left:30px">js参数3</div>
+			
+			<input id="funParamID3" type="text" style="font-size:30px;margin-left:30px" name="funParam3" />
+		
+			<div id="d6" style="font-size:30px;margin-left:30px">js参数4</div>
+			
+			<input id="funParamID4" type="text" style="font-size:30px;margin-left:30px" name="funParam4" />
+			
+			<div id="d6" style="font-size:30px;margin-left:30px">js参数5</div>
+			
+			<input id="funParamID5" type="text" style="font-size:30px;margin-left:30px" name="funParam5" />
+			
+			<div id="d7" style="font-size:30px;margin-left:30px">js回调方法执行代码输入</div>
+			
+			<input id="funParamID6" type="text" style="font-size:30px;margin-left:30px" name="funParam6" />
+			
+			<div id="d8" style="font-size:30px;margin-left:30px">js回调函数参数</div>
+			
+			<input id="funParamID7" type="text" style="font-size:30px;margin-left:30px" name="funParam7" />
+			<br/>
+			<br/>
+			<input id="clearText" type="button" onclick="ClearAllText()" style="font-size:30px;margin-left:30px" value="清空" />
+			<br/>		
+		</div>
+		<div class="right">
+			<input id="submitNoParam" type="button" onclick="myFuncNoParam()" style="font-size:30px;margin-left:30px" value="submitNoParam" />
+			<br/>
+			<br/>
+			<input id="submit" type="button" onclick="myFunc()" style="font-size:30px;margin-left:30px" value="submit" />  
+			<br/>
+			<br/>
+			<input id="submit2" type="button" onclick="myFunc2()" style="font-size:30px;margin-left:30px" value="submit2" />
+			<br/>
+			<br/>
+			<input id="submit3" type="button" onclick="myFunc3()" style="font-size:30px;margin-left:30px" value="submit3" />
+			<br/>
+			<br/>
+			<input id="submit4" type="button" onclick="myFunc4()" style="font-size:30px;margin-left:30px" value="submit4" />
+			<br/>
+			<br/>
+			<input id="submit5" type="button" onclick="myFunc5()" style="font-size:30px;margin-left:30px" value="submit5" />
+			<br/>
+			<br/>
+			<input id="submitNoParamResult" type="button" onclick="myFuncNoParamResult()" style="font-size:30px;margin-left:30px" value="submitNoParamResult" />
+			<br/>
+			<br/>
+			<input id="submitResult" type="button" onclick="myFuncResult()" style="font-size:30px;margin-left:30px" value="submitResult" />
+			<br/>
+			<br/>
+			<input id="submit2Result" type="button" onclick="myFunc2Result()" style="font-size:30px;margin-left:30px" value="submit2Result" />
+			<br/>
+			<br/>
+			<input id="submit4Result" type="button" onclick="myFunc4Result()" style="font-size:30px;margin-left:30px" value="submit4Result" />
+			<br/>
+			<br/>
+			
+		</div>
+		<br/>
+		<br/>
+ <div class="clearfix"></div>
+		<div id="fontBig" type="text" style="font-size:30px;margin-left:30px" onclick="fontBig()">变大</div>
+		<br/>
+		<div id="fontSmall" type="text" style="font-size:30px;margin-left:30px" onclick="fontSmall()">变小</div>
+		<br/>
+		<div id="showResult" type="text" style="font-size:30px;margin-left:30px" onclick="showResult()">返回值</div>
+		<br/>
+		<div id="setTextSizeNormal" type="text" style="font-size:30px;margin-left:30px;margin-bottom:150px;" onclick="setTextSizeNormal()">字体恢复</div>
+
+	</body>
+
+</html>
